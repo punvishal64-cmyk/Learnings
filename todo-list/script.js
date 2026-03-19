@@ -16,33 +16,34 @@ function addTask() {
 
     const li = document.createElement("li");
 
-// Create text
-const span = document.createElement("span");
-span.textContent = taskText;
+   // Create text
+    const span = document.createElement("span");
+    span.textContent = taskText;
 
-span.addEventListener("click", function () {
+    span.addEventListener("click", function () {
     span.classList.toggle("completed");      /* Toggle the "completed" class on click to mark task as completed or not */
-});
+   });
 
-li.appendChild(span);
+    li.appendChild(span);
 
-// Create delete button
-const deleteBtn = document.createElement("button");
-deleteBtn.textContent = "Delete";
+  // Create delete button
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
 
-// Add click event to delete button
-deleteBtn.addEventListener("click", function () {
+  // Add click event to delete button
+    deleteBtn.addEventListener("click", function () {
     li.remove();
-});
+   });
 
-// Append button inside li
-li.appendChild(deleteBtn);
+  // Append button inside li
+    li.appendChild(deleteBtn);
 
     list.appendChild(li);
 
     input.value = "";
 
 }
+
 
 // Step 3: Button click
 button.addEventListener("click", addTask);
@@ -52,6 +53,7 @@ input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         addTask();
     }
+
 });
 
 
