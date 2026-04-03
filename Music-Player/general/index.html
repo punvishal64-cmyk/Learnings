@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 🎧 PLAYER -->
+    <div class="player">
+        <h2 id="songTitle">Loading...</h2>
+
+        <input type="range" id="progressBar" value="0" min="0" max="100">
+
+        <div class="controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playBtn">▶️</button>
+            <button id="nextBtn">⏭️</button>
+            <button id="favBtn">🤍</button>
+        </div>
+
+        <!-- ➕ Add to playlist -->
+        <div class="playlist-actions">
+            <select id="playlistSelect"></select>
+            <button id="addToPlaylist">Add ➕</button>
+        </div>
+    </div>
+
+    <!-- 📜 PLAYLIST PANEL -->
+    <div class="playlist-panel">
+        <h3>Your Library</h3>
+
+        <div class="create">
+            <input type="text" id="playlistName" placeholder="New playlist">
+            <button id="createPlaylist">+</button>
+        </div>
+
+        <div id="playlists"></div>
+    </div>
+
+</div>
+
+<audio id="audioPlayer"></audio>
+<script src="script.js"></script>
+
+</body>
+</html>

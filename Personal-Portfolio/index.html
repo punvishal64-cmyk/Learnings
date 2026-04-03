@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <h2>MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home-section reveal">
+        <div class="home-content">
+            <h1>Hi, I'm Vishal Pun</h1>
+            <p class="tagline">Frontend Developer & Math Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <img src="My photo.jpeg" alt="Profile Picture" class="profile-img">
+    </section>
+
+    <section id="about" class="section-container reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a second-year B.Tech student pursuing Mathematics and Computing at Punjab Engineering College. 
+                I have a strong foundation in algorithms, operating systems, and a growing passion for modern web development. 
+                I love bridging the gap between complex mathematical logic and user-friendly digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section-container bg-light reveal">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Data Structures and Algorithms</div>
+        </div>
+    </section>
+
+ <section id="projects" class="section-container reveal">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <h3>Interactive To-Do List</h3>
+                <p>A dynamic task management tool that allows users to add, edit, delete, and mark daily tasks as complete for better productivity.</p>
+                <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                    <a href="https://punvishal64-cmyk.github.io/Learnings/todo-list/" class="link">Live Demo</a>
+                    <a href="https://github.com/punvishal64-cmyk/Learnings/tree/main/todo-list" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Note Making App</h3>
+                <p>A clean web application for taking and organizing personal notes. It utilizes browser LocalStorage so users never lose their data when refreshing the page.</p>
+                <p><strong>Stack:</strong> HTML, CSS, JavaScript, LocalStorage API</p>
+                <div class="project-links">
+                    <a href="https://punvishal64-cmyk.github.io/Learnings/Notemaking-app/" class="link">Live Demo</a>
+                    <a href="https://github.com/punvishal64-cmyk/Learnings/tree/main/Notemaking-app" class="link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Real-Time Weather App</h3>
+                <p>A responsive application that fetches and displays live weather conditions, humidity, and temperature data using a public weather API.</p>
+                <p><strong>Stack:</strong> JavaScript, Fetch API, CSS</p>
+                <div class="project-links">
+                    <a href="https://punvishal64-cmyk.github.io/Learnings/weather-app/" class="link">Live Demo</a>
+                    <a href="https://github.com/punvishal64-cmyk/Learnings/tree/main/weather-app" class="link">GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section-container bg-light reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formMessage" class="form-message"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vishal Pun. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

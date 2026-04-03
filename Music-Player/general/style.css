@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*  KEY FIX */
+    
+    height: 100vh;
+    overflow: hidden; /* prevents page stretch */
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* PLAYER */
+.player {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(162, 103, 103, 0.4);   /*  semi-transparent */
+    backdrop-filter: blur(10px);             /* frosted glass effect */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* PLAYLIST ACTIONS (FIXED SPACING) */
+.playlist-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#playlistSelect {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #43d275;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17a74a;
+}
+
+#progressBar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* PLAYLIST PANEL */
+.playlist-panel {
+    width: 350px;
+    height: 80vh; /*  fixed height */
+    overflow-y: auto; /*  scroll inside */
+    
+    background: rgba(162, 103, 103, 0.4); /*  semi-transparent */
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.create {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.playlist {
+    margin-bottom: 20px; 
+}
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.song:hover {
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background: transparent;
+    /* color: rgb(113, 79, 79); */
+    border: none;
+    cursor: pointer;
+}
+
+
+.playlist h4 {
+    margin: 0;
+}
+
+.playlist-panel::-webkit-scrollbar {
+    width: 10px;
+}
+
+.playlist-panel::-webkit-scrollbar-thumb {
+    background: #83988b;
+    border-radius: 5px;
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.player {
+    width: 320px;              /* FIXES overflow */
+    max-width: 90%;            /* responsive */
+    margin: auto;              /* center horizontally */
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#songTitle {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    background: #2c2c3e;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3d3d5c;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#progressBar {
+    width: 100%;
+}
+
